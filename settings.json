@@ -1,117 +1,123 @@
 {
-    // --- Custom Keybinds ---
-    // Toggle activity bar: (CMD + Control + B)
-  
-    // --- General ---
-    "files.autoSave": "afterDelay",
-    "settingsSync.ignoredSettings": ["workbench.activityBar.visible"],
-    "git.openRepositoryInParentFolders": "always",
-  
-    // --- Workbench ---
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "welcomePage",
-    "workbench.editor.showTabs": true,
-    "workbench.colorCustomizations": {
-      "tab.activeBorder": "#DD6C74"
-    },
-  
-    // --- Editor ---
-    "editor.lineNumbers": "on",
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true,
-    "editor.renderWhitespace": "selection",
-    "editor.renderLineHighlight": "all",
-    "editor.rulers": [80, 120],
-    "editor.linkedEditing": true,
-    "editor.inlineSuggest.enabled": true,
-    "editor.minimap.showSlider": "always",
-    "editor.minimap.renderCharacters": true,
-    "editor.formatOnPaste": true,
+  // --- Custom Keybinds ---
+  // Toggle activity bar: (CMD + Control + B)
+
+  // --- General ---
+  "files.autoSave": "afterDelay",
+  "settingsSync.ignoredSettings": ["workbench.activityBar.visible"],
+  "git.openRepositoryInParentFolders": "always",
+
+  // --- Workbench ---
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": true,
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#DD6C74"
+  },
+
+  // --- Editor ---
+  "editor.lineNumbers": "on",
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "all",
+  "editor.rulers": [80, 120],
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+
+  // --- Scrolling and Cursor ---
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelScrollSensitivity": 1,
+  "editor.cursorBlinking": "blink",
+  "editor.cursorStyle": "underline",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // --- Font and Text ---
+  "editor.fontFamily": "'JetBrains Mono', 'Menlo', 'Consolas', 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": false,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 20,
+  "editor.fontWeight": "500",
+  "terminal.integrated.fontSize": 13,
+
+  // --- Formatting and Indentation ---
+  "prettier.tabWidth": 4,
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "all",
+  "editor.wrappingIndent": "same",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "indentRainbow.indicatorStyle": "light",
+  "editor.guides.bracketPairs": "active",
+  "indentRainbow.colors": [
+    "#2B4279",
+    "#65428C",
+    "#A1378B",
+    "#D42374",
+    "#F62B4C",
+    "#FF5800"
+  ],
+
+  // --- Language-Specific ---
+  "[python]": {
     "editor.formatOnType": true,
-    "editor.formatOnSave": true,
-  
-    // --- Scrolling and Cursor ---
-    "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 1,
-    "editor.cursorBlinking": "blink",
-    "editor.cursorStyle": "underline",
-    "editor.cursorSmoothCaretAnimation": "on",
-  
-    // --- Font and Text ---
-    "editor.fontFamily": "'JetBrains Mono', 'Menlo', 'Consolas', 'Courier New', monospace",
-    "editor.fontSize": 13,
-    "editor.fontLigatures": false,
-    "editor.letterSpacing": 0.5,
-    "editor.lineHeight": 20,
-    "editor.fontWeight": "500",
-    "terminal.integrated.fontSize": 13,
-  
-    // --- Formatting and Indentation ---
-    "prettier.tabWidth": 4,
-    "files.trimTrailingWhitespace": true,
-    "indentRainbow.indicatorStyle": "light",
-    "editor.guides.bracketPairs": "active",
-    "indentRainbow.colors": [
-      "#2B4279",
-      "#65428C",
-      "#A1378B",
-      "#D42374",
-      "#F62B4C",
-      "#FF5800"
-    ],
-  
-    // --- Language-Specific ---
-    "[python]": {
-      "editor.formatOnType": true,
-    },
-    "[javascript]": {
-      "editor.formatOnType": true
-    },
-  
-    // --- Git and SCM ---
-    "git.enabled": true,
-    "git.autofetch": true,
-  
-    // --- Plugins and Extensions ---
-    "github.copilot.enable": {
-      "*": true,
-      "plaintext": true,
-      "markdown": true,
-      "java": true,
-      "python": true,
-    },
-  
-    // --- Terminal ---
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shellIntegration.history": 10,
-  
-    // --- Dictionary ---
-    "cSpell.language": "en-GB", // en-GB, en-US
-    "cSpell.caseSensitive": true,
-    "cSpell.ignoreRegExpList": ["#.*", "/\\*.*\\*/"],
-    "cSpell.customDictionaries": {
-      "custom-dictionary-user": {
-        "name": "custom-dictionary-user",
-        "path": "~/.cspell/custom-dictionary-user.txt",
-        "addWords": true,
-        "scope": "user"
-      }
-    },
-    "cSpell.userWords": [
-      "autofetch",
-      "color",
-      "Consolas",
-      "Keybinds"
-    ],
-  
-    /// --- IntelliSense ---
-    "editor.suggestSelection": "recentlyUsedByPrefix", // first, recentlyUsedByPrefix
-    "editor.snippetSuggestions": "inline",
-  
-    // --- Other ---
-    "editor.minimap.enabled": true,
-  }
-  
+  },
+  "[javascript]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // --- Git and SCM ---
+  "git.enabled": true,
+  "git.autofetch": true,
+
+  // --- Plugins and Extensions ---
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "java": true,
+    "python": true,
+  },
+
+  // --- Terminal ---
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.shellIntegration.history": 10,
+
+  // --- Dictionary ---
+  "cSpell.language": "en-GB", // en-GB, en-US
+  "cSpell.caseSensitive": true,
+  "cSpell.ignoreRegExpList": ["#.*", "/\\*.*\\*/"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-user": {
+      "name": "custom-dictionary-user",
+      "path": "~/.cspell/custom-dictionary-user.txt",
+      "addWords": true,
+      "scope": "user"
+    }
+  },
+  "cSpell.userWords": [
+    "autofetch",
+    "color",
+    "Consolas",
+    "esbenp",
+    "Keybinds"
+  ],
+
+  /// --- IntelliSense ---
+  "editor.suggestSelection": "recentlyUsedByPrefix", // first, recentlyUsedByPrefix
+  "editor.snippetSuggestions": "inline",
+
+  // --- Other ---
+  "editor.minimap.enabled": true,
+}
