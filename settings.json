@@ -1,123 +1,183 @@
 {
-  // --- Custom Keybinds ---
-  // Toggle activity bar: (CMD + Control + B)
+    // --- Custom Keybinds ---
+    // Toggle activity bar: (CMD + Control + B)
 
-  // --- General ---
-  "files.autoSave": "afterDelay",
-  "settingsSync.ignoredSettings": ["workbench.activityBar.visible"],
-  "git.openRepositoryInParentFolders": "always",
+    // --- General ---
+    "files.autoSave": "afterDelay",
+    "git.openRepositoryInParentFolders": "always",
 
-  // --- Workbench ---
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "none",
-  "workbench.editor.showTabs": true,
-  "workbench.colorCustomizations": {
-    "tab.activeBorder": "#DD6C74"
-  },
+    // --- Workbench ---
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.location": "top",
+    "workbench.startupEditor": "none",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#DF6C75" // Colour of tab bar
+        //"editorHint.foreground": "#facc15" // Colour of spelling ellipsis
+    },
 
-  // --- Editor ---
-  "editor.lineNumbers": "on",
-  "editor.tabSize": 4,
-  "editor.detectIndentation": true,
-  "editor.renderWhitespace": "selection",
-  "editor.renderLineHighlight": "all",
-  "editor.rulers": [80, 120],
-  "editor.linkedEditing": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.minimap.showSlider": "always",
-  "editor.minimap.renderCharacters": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
-
-  // --- Scrolling and Cursor ---
-  "editor.smoothScrolling": true,
-  "editor.mouseWheelScrollSensitivity": 1,
-  "editor.cursorBlinking": "blink",
-  "editor.cursorStyle": "underline",
-  "editor.cursorSmoothCaretAnimation": "on",
-
-  // --- Font and Text ---
-  "editor.fontFamily": "'JetBrains Mono', 'Menlo', 'Consolas', 'Courier New', monospace",
-  "editor.fontSize": 13,
-  "editor.fontLigatures": false,
-  "editor.letterSpacing": 0.5,
-  "editor.lineHeight": 20,
-  "editor.fontWeight": "500",
-  "terminal.integrated.fontSize": 13,
-
-  // --- Formatting and Indentation ---
-  "prettier.tabWidth": 4,
-  "prettier.printWidth": 80,
-  "prettier.singleQuote": false,
-  "prettier.trailingComma": "all",
-  "editor.wrappingIndent": "same",
-  "files.trimTrailingWhitespace": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "indentRainbow.indicatorStyle": "light",
-  "editor.guides.bracketPairs": "active",
-  "indentRainbow.colors": [
-    "#2B4279",
-    "#65428C",
-    "#A1378B",
-    "#D42374",
-    "#F62B4C",
-    "#FF5800"
-  ],
-
-  // --- Language-Specific ---
-  "[python]": {
+    // --- Editor ---
+    "editor.lineNumbers": "on",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.renderWhitespace": "selection",
+    "editor.renderLineHighlight": "all",
+    "editor.rulers": [80, 120],
+    "editor.linkedEditing": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.renderCharacters": true,
+    "editor.formatOnPaste": true,
     "editor.formatOnType": true,
-  },
-  "[javascript]": {
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "editor.formatOnSave": true,
 
-  // --- Git and SCM ---
-  "git.enabled": true,
-  "git.autofetch": true,
+    // --- Scrolling and Cursor ---
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 1,
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "underline",
+    "editor.cursorSmoothCaretAnimation": "on",
 
-  // --- Plugins and Extensions ---
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "java": true,
-    "python": true,
-  },
+    // --- Font and Text ---
+    "editor.fontFamily": "'JetBrains Mono', 'Menlo', 'Consolas', 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": false,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 20,
+    "editor.fontWeight": "500",
+    "terminal.integrated.fontSize": 13,
 
-  // --- Terminal ---
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.cursorStyle": "underline",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.shellIntegration.history": 10,
+    // --- Formatting and Indentation ---
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 80,
+    "prettier.singleQuote": false,
+    "prettier.trailingComma": "all",
+    "editor.wrappingIndent": "same",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "indentRainbow.indicatorStyle": "light",
+    "editor.guides.bracketPairs": "active",
+    "indentRainbow.colors": [
+        "#2B4279",
+        "#65428C",
+        "#A1378B",
+        "#D42374",
+        "#F62B4C",
+        "#FF5800"
+    ],
 
-  // --- Dictionary ---
-  "cSpell.language": "en-GB", // en-GB, en-US
-  "cSpell.caseSensitive": true,
-  "cSpell.ignoreRegExpList": ["#.*", "/\\*.*\\*/"],
-  "cSpell.customDictionaries": {
-    "custom-dictionary-user": {
-      "name": "custom-dictionary-user",
-      "path": "~/.cspell/custom-dictionary-user.txt",
-      "addWords": true,
-      "scope": "user"
-    }
-  },
-  "cSpell.userWords": [
-    "autofetch",
-    "color",
-    "Consolas",
-    "esbenp",
-    "Keybinds"
-  ],
+    // --- Language-Specific ---
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
 
-  /// --- IntelliSense ---
-  "editor.suggestSelection": "recentlyUsedByPrefix", // first, recentlyUsedByPrefix
-  "editor.snippetSuggestions": "inline",
+    "[javascript]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-  // --- Other ---
-  "editor.minimap.enabled": true,
+    "[cpp]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Microsoft, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: False, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
+
+    // --- Git and SCM ---
+    "git.enabled": true,
+    "git.autofetch": true,
+
+    // --- Plugins and Extensions ---
+    // Copilot
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "java": true,
+        "python": true
+    },
+
+    // Code Runner
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "cd $dir && g++-13 -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python3 -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+        "mojo": "mojo run"
+    },
+
+    // --- Terminal ---
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.shellIntegration.history": 10,
+
+    // --- Dictionary ---
+    "cSpell.diagnosticLevel": "Hint",
+    "cSpell.language": "en-GB,en,en-US,lorem",
+    "cSpell.caseSensitive": true,
+    "cSpell.ignoreRegExpList": ["#.*", "/\\*.*\\*/"],
+
+    /// --- IntelliSense ---
+    "editor.suggestSelection": "recentlyUsedByPrefix", // first, recentlyUsedByPrefix
+    "editor.snippetSuggestions": "inline",
+
+    // --- Other ---
+    "editor.minimap.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "cmake.showOptionsMovedNotification": false
 }
