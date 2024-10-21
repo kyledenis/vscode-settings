@@ -23,7 +23,7 @@
     "editor.detectIndentation": true,
     "editor.renderWhitespace": "selection",
     "editor.renderLineHighlight": "all",
-    "editor.rulers": [80, 120],
+    "editor.rulers": [80, 100, 120],
     "editor.linkedEditing": true,
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.showSlider": "always",
@@ -90,6 +90,9 @@
     // --- Git and SCM ---
     "git.enabled": true,
     "git.autofetch": true,
+
+    // --- Prolog ---
+    "swipl.executablePath": "/usr/local/bin/swipl",
 
     // --- Plugins and Extensions ---
     // Copilot
@@ -177,7 +180,11 @@
 
     // --- Other ---
     "editor.minimap.enabled": true,
-    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableAutoCompletions": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "cmake.showOptionsMovedNotification": false
+    "cmake.showOptionsMovedNotification": false,
+    "explorer.confirmDragAndDrop": false,
+    "github.copilot.chat.experimental.temporalContext.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.sideBar.location": "right"
 }
